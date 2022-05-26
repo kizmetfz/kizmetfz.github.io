@@ -94,7 +94,8 @@ ul {
 .line-1 {
     position: relative;
     width: 100%;
-    top: -7.5em;
+    top: -10.2em;
+    left: -6em;
 }
 
 .nav-open {
@@ -120,13 +121,16 @@ ul {
         gap: 3em;
         li {
             font-size: 4.5rem;
+            a {
+                color: $white;
+            }
         }
     }
 }
 
 // Hero Section 
 .hero-section {
-    top: -8em;
+    top: -10em;
 }
 .row {
     display: flex;
@@ -147,7 +151,20 @@ ul {
     // display: none;
     position: relative;
     width: 100%;
+    h3 {
+        position: relative;
+        z-index: 2;
+    }
     // left: 3em;
+}
+.about-cta-rectangle {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background: #B56AFF;
+    z-index: 1;
 }
 
 .arrow-to-cta {
@@ -163,7 +180,7 @@ ul {
     top: 0;
     right: -4em;
     padding: .4em 1.5em;
-    background: #B56AFF;
+    background: $orange;
     color: $white;
     font-family: "Bebas Neue";
     font-size: 1.4em;
@@ -200,7 +217,8 @@ ul {
 .millie-image-left {
     position: relative;
     width: 100%;
-    left: -2.5em;
+    left: -6em;
+    z-index: -1;;
     img {
         position: inherit;
     }
@@ -454,6 +472,13 @@ ul {
 }
 
 @media only screen and (min-width: 768px){
+    .line-1 {
+        top: -10em;
+        left: -16em;
+    }
+    .hero-section {
+        top: -14em;
+    }
     .row {
         h1 {
             font-size: 5rem;
@@ -739,7 +764,7 @@ ul {
         left: 0;
     }
     .arrow-to-millie {
-        top: 33em;
+        top: 30em;
     }
     .news {
         right: 4em;
@@ -799,4 +824,3 @@ ul {
     }
     
 }
-

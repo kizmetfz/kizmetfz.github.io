@@ -1,0 +1,79 @@
+/* Animations */
+header {
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.line-1 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: anim-line1 2s ease-in-out forwards;
+          animation: anim-line1 2s ease-in-out forwards;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.arrow-to-cta {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: anim-arrow-cta 5s ease-in-out forwards;
+          animation: anim-arrow-cta 5s ease-in-out forwards;
+}
+
+.btn-primary .about-cta-rectangle {
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.btn-primary:hover .about-cta-rectangle {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.card:hover {
+  -webkit-animation: anim-card .4s ease-out forwards;
+          animation: anim-card .4s ease-out forwards;
+}
+
+@-webkit-keyframes anim-line1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes anim-line1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes anim-arrow-cta {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes anim-arrow-cta {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes anim-card {
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes anim-card {
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+/*# sourceMappingURL=main-animation.css.map */
